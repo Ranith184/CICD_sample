@@ -23,7 +23,7 @@ pipeline {
         }
         stage('SonarQube Analysis') {
             steps {
-               sh '''$SCANNER_HOME/bin/sonar-scanner -Dsonar.url=http://35.156.107.35:9000/ -Dsonar.login=squ_986be6dd255f65c2e34470b07470693c208d50b7 -Dsonar.projectName=CICD_sample \
+               sh '''$SCANNER_HOME/bin/sonar-scanner -Dsonar.url=http://35.156.107.35:9000/ -Dsonar.login=squ_0ac3418bbd97e5ccd2a9e18a67392c1575aba3be -Dsonar.projectName=CICD_sample \
                -Dsonar.java.binaries=. \
                -Dsonar.projectKey=CICD_sample '''
             }

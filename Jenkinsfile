@@ -18,6 +18,7 @@ pipeline {
         stage('Compile') {
             steps {
                 sh 'mvn clean compile'
+                echo "build successfully"
             }
         }
         stage('SonarQube Analysis') {
